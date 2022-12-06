@@ -1,0 +1,64 @@
+/*
+ * PAGE
+ */
+
+.page-title {
+	background: #eaeaea;
+	color: $text;
+ 	text-align: center;
+ 	padding: 5rem .5rem;
+
+ 	h1 {
+ 		font-weight: 700;
+ 		max-width: 700px;
+ 		margin: 0 auto;
+ 		float: none;
+ 	}
+
+ 	h3 {
+ 		margin-top: 1rem;
+ 		font-weight: 300;
+ 	}
+}
+
+.page-content {
+	margin-top: 2rem;
+
+	h3 {
+		font-weight: 700;
+		padding: 2rem 0 .5rem 0;
+		font-size: 28px;
+	}
+
+	h4 {
+		padding: 1.5rem 0 .5rem 0;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1rem;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: 400;
+	}
+
+
+	ul li {
+		list-style-type: disc;
+		margin-left: 30px;
+		font-size: 18px;
+	}
+}
+
+/*************************************
+   
+   TABLET AND UP
+
+*************************************/
+
+@media screen and (min-width: 768px) {
+	.page-content {
+		max-width: 700px;
+	}
+}

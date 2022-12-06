@@ -1,0 +1,38 @@
+/*
+ *  STYLES.SCSS
+ *
+ *  Imports the styles used in the application to override or
+ *  supplement Materialize. Include or exclude specific stylesheets
+ *  as needed for the project. See http://materializecss.com/ for
+ *  details about the base theme.
+ */
+
+/* Project base settings */
+@import 'base/grid';
+@import 'base/colors';
+@import 'base/helpers';
+@import 'base/typography';
+@import 'base/base';
+
+/* Specific modified elements as needed */
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/dropdown';
+@import 'components/form';
+@import 'components/navbar';
+@import 'components/tabs';
+@import 'components/tags';
+
+
+/* 'Theme' stylesheets include styles specific to the views defined by
+ *  the visualization. Follow the convention above to import the styles
+ *  you need.
+ */
+
+@import 'theme/header';
+@import 'theme/page';
+@import 'theme/sidebar';
+@import 'theme/footer';
+@import 'theme/home';
+@import 'theme/browse';
+@import 'theme/visualization';

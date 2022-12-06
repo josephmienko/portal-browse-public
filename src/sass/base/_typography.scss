@@ -1,0 +1,49 @@
+/*
+ * Typography
+ *
+ * Default styles for text elements.
+ *
+ * Author: Erika Deal
+ * Contact: edeal@uw.edu
+ * Date Created: 8/4/2015
+*/
+
+
+body {
+ 	color: #565656;
+ 	font-family: 'Open Sans';
+ 	font-weight: 400;
+ 	font-size: 18px;
+ 	line-height: 1.5;
+}
+
+a {
+	color: $teal;
+	font-weight: 400;
+
+	&:hover {
+		color: $dark-teal;
+	}
+}
+
+h1 {
+	font-size: 39px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	color: $medium-gray;
+	font-size: .8em;
+	margin: 1rem 0;
+}

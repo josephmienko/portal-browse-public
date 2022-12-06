@@ -1,0 +1,44 @@
+/*
+ * Footer
+ *
+ * Default footer styles for POC projects.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+
+footer.page-footer {
+	background: $black;
+	color: $medium-gray;
+	padding-top: 4rem;
+
+	.row {
+		max-width: 600px;
+		margin: 0 auto;
+		float: none;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.description {
+		padding-bottom: 2rem;
+	}
+
+	.footer-copyright {
+		margin-top: 1rem;
+		text-align: right;
+		height: auto;
+		line-height: auto;
+
+		p {
+			padding: .5rem 1rem;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+}

@@ -1,0 +1,111 @@
+/*
+ *  STYLES.SCSS
+ *
+ *  Imports the styles used in the application to override or
+ *  supplement Materialize. Include or exclude specific stylesheets
+ *  as needed for the project. See http://materializecss.com/ for
+ *  details about the base theme.
+ */
+/* Project base settings */
+/*
+ * Grid
+ *
+ * Settings and overrides for the Materialize grid.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+/*
+ * Colors
+ *
+ * Variables defining the current color scheme.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+/*
+ * Typography
+ *
+ * Default styles for text elements.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+/*
+ * Base Styles
+ *
+ * Global styles applied to top-level elements.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+html,
+body {
+  background: #f5f5f5; }
+
+/* Specific modified elements as needed */
+/*
+ * Buttons
+ *
+ * Default POC button styles. Overrides Materialize.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+.btn {
+  border-radius: 0; }
+
+/*
+ * Cards
+ *
+ * Default styles for information cards. Overrides Materialize.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+/*
+ * Dropdown
+ *
+ * Default styles for dropdown menus and lists. Overrides Materialize.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+/*
+ * Forms
+ *
+ * Default styles for form elements. Overrides Materialize.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+/*
+ * Navbar
+ *
+ * Default styles for the top navbar. Overrides Materialize.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+/*
+ * Tabs
+ *
+ * Default styles for tabs. Overrides Materialize.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+/* 'Theme' stylesheets include styles specific to the views defined by
+ *  the visualization. Follow the convention above to import the styles
+ *  you need.
+ */

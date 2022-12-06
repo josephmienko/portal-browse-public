@@ -1,0 +1,117 @@
+/*
+ * Cards
+ *
+ * Default styles for information cards. Overrides Materialize.
+ *
+ * Author: Erika Deal
+ * Contact: edeal@uw.edu
+*/
+
+.card .card-content .card-title {
+	line-height: 1.5rem;
+	font-size: 22px;
+}
+
+.card .card-content p {
+	font-size: 14px;
+	color: lighten($text, 5%);
+}
+
+// Set to display: none because they are used for searching
+// and filtering only
+.card .vocabularies {
+	display: none;
+}
+
+/**************************************
+
+         CARD BACKGROUND IMAGES
+
+**************************************/
+
+.card .card-image .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.graph .card-image {
+	position: relative;
+
+	&:before {
+		@include card-icon;
+		content: '\f080';
+	}
+
+	.overlay {
+		background: rgba($poc-blue, .9);
+	}
+}
+
+.map .card-image {
+	position: relative;
+
+	&:before {
+		@include card-icon;
+		content: '\f278';
+	}
+
+	.overlay {
+		background: rgba($poc-green, .9);
+	}
+}
+
+.report .card-image {
+	position: relative;
+
+	&:before {
+		@include card-icon;
+		content: '\f0f6';
+	}
+
+	.overlay {
+		background: rgba($dark-yellow, .9);
+	}
+}
+
+/**************************************
+
+            CARD ACTION BAR
+
+**************************************/
+
+.card .card-action {
+	padding: 15px 20px;
+}
+
+.card .card-action a {
+	color: lighten($pink, 5%);
+
+	&:hover {
+		color: $pink;
+	}
+}
+
+// Small tags on cards
+.tag-info {
+	color: $medium-gray;
+	font-size: 14px;
+	text-align: right;
+	padding: 3px 0;
+
+	i {
+		padding-right: 5px;
+	}
+}
+
+// View link
+.url.col {
+	padding: 0;
+	font-size: 14px;
+
+	i {
+		padding-right: 5px;
+	}
+}

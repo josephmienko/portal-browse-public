@@ -1,0 +1,15 @@
+.vagrant
+node_modules
+
+public/content
+public/data
+public/content-data
+public/config.json
+.Rproj.user
+*.Rproj
+*.Rhistory
+
+*.iml
+
+
+

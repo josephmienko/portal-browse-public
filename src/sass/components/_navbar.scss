@@ -1,0 +1,85 @@
+/*
+ * Navbar
+ *
+ * Default styles for the top navbar. Overrides Materialize.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+
+ nav {
+ 	background-color: #fff;
+ 	box-shadow: none;
+ }
+
+ nav ul a,
+ .side-nav a {
+ 	color: $text;
+ 	text-transform: uppercase;
+ 	font-weight: 600;
+ 	letter-spacing: 2px;
+
+ 	&:hover {
+ 		color: $white;
+ 	}
+ 	&.current {
+		background: #ededed;
+		border-radius: 4px;
+ 	}
+ }
+
+header > a.button-collapse {
+ 	position: absolute;
+ 	top: 10px;
+ 	left: 1rem;
+ 	z-index: 900;
+
+ 	i {
+ 		height: 40px;
+ 		line-height: 40px;
+ 		font-size: 22px;
+ 	}
+ }
+
+ nav ul.right {
+ 	display: none;
+ }
+
+ nav ul li:hover, nav ul li.active {
+ 	background-color: #fff;
+ }
+
+ .side-nav li {
+ 	&:hover {
+ 		background: $teal;
+ 	}
+
+ 	a:hover {
+ 		background: none;
+ 	}
+ }
+
+// Larger screens
+@media screen and (min-width: 992px) {
+
+	nav ul.right {
+		display: block;
+		padding-right: 1rem;
+		line-height: 40px;
+		margin: 12px 0;
+	}
+
+	nav ul a {
+		margin-right: 10px;
+		font-size: 14px;
+
+		&:hover {
+			color: $pink;
+		}
+	}
+
+	header > a.button-collapse {
+	 	display: none;
+	}
+}

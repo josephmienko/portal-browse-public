@@ -1,0 +1,347 @@
+/**
+ * HOME
+ *
+ * Styles for the home page
+ *
+ * Author: Erika Deal
+ * Contact: edeal@uw.edu
+ */
+
+
+.home h3 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 22px;
+	letter-spacing: 1px;
+	padding-bottom: 2.5rem;
+}
+
+.home .section {
+	padding: 3rem 0;
+}
+
+.home nav {
+	background-color: transparent;
+	position: relative;
+	z-index: 2;
+
+	ul li:hover {
+		background: none;
+	}
+
+	ul#nav a {
+		color: $white;
+	}
+
+	ul a:hover,
+	ul a.current {
+		background: rgba($white, .25);
+		border-radius: 4px;
+		color: $white;
+	}
+}
+
+.home a.button-collapse {
+	color: $white;
+}
+
+/*********************************
+  
+  BANNER
+
+*********************************/
+#banner {
+	color: $white;
+	text-align: center;
+	margin-top: -64px;
+	position: relative;
+	z-index: 1;
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 2.5em;
+		font-weight: 700;
+		padding-top: 1em;
+	}
+
+	h2 {
+		font-size: 1rem;
+		font-weight: 300;
+		line-height: 1.8rem;
+	}
+}
+
+#banner .overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba($black, .65);
+}
+
+#banner img {
+ 	width: 100%;
+ }
+
+ .banner-content {
+ 	max-width: 800px;
+ 	margin: 0 auto;
+ 	float: none;
+ }
+
+ #banner .search {
+ 	max-width: 450px;
+ 	margin: 0 auto;
+ 	float: none;
+ 	position: relative;
+
+ 	input[type='search'] {
+ 		background: $light-gray;
+ 		border: 0;
+ 		padding: 8px 0 8px 16px;
+ 		color: $text;
+ 		-webkit-appearance: none;
+      border-radius: 0;
+      width: 90%;
+
+ 		&:active, &:focus {
+ 			background: $white;
+ 		}
+ 	}
+
+ 	label {
+ 		position: absolute;
+ 		top: 1.2rem;
+ 		left: 1rem;
+ 		font-size: 1rem;
+ 		height: 3rem;
+ 		display: none;
+ 	}
+
+ 	input[type="submit"] {
+ 		background: $pink;
+ 		text-transform: uppercase;
+ 		padding: .5rem 1.5rem;
+ 		line-height: 3.15rem;
+ 		font-size: 1rem;
+ 		border: 0;
+ 		position: absolute;
+ 		top: 0;
+ 		right: 0;
+ 		-webkit-appearance: none;
+      border-radius: 0;
+
+      &:hover {
+      	background: $dark-pink;
+      }
+ 	}
+
+ 	input[type=search]:focus:not([readonly]) {
+ 		border: 0;
+ 		box-shadow: none;
+ 	}
+
+ 	input[type=search]:focus:not([readonly])+label,
+ 	input[type=search]:active:not([readonly])+label {
+ 		color: transparent;
+ 	}
+ }
+
+// Laptop and up
+@media screen and (min-width: 768px) {
+
+	#banner h1 {
+		font-size: 5rem;
+		padding-top: 1.5em;
+	}
+
+	#banner h2 {
+		font-size: 1.2rem;
+		padding: 0 0 3rem 0;
+		max-width: 500px;
+		margin: 0 auto;
+		float: none;
+	}
+
+	#banner .search label {
+		display: inline-block;
+	}
+
+	#banner .search input[type='search'] {
+		width: 100%;
+	}
+
+	#banner .search input[type='submit'] {
+		right: -1.3rem;
+	}
+
+	.parallax-container {
+		height: 650px;
+	}
+
+}
+
+ /*********************************
+  
+  #DASHBOARD
+
+  NOTE: Visualization styles are
+  stored in _dashboard.scss
+
+*********************************/
+
+#dashboard.section {
+	padding: 0;
+	background: $white;
+	overflow-x: hidden;
+}
+
+#dashboard.row {
+	margin: 0;
+}
+
+#dashboard .tabs {
+	height: auto;
+	white-space: normal;
+	display: flex;
+	flex-wrap: wrap;
+
+	.tab {
+		height: auto;
+		line-height: 1.5;
+		text-transform: none;
+		background: $teal;
+		display: flex;
+		width: 100%;
+	}
+
+	.tab a {
+		font-weight: 300;
+		color: $white;
+		padding: 2em;
+		height: auto;
+
+		&:hover, &.active {
+			background: $dark-teal;
+		}
+
+		&.active {
+			position: relative;
+
+			&:after {
+				content: '';
+				position: absolute;
+				width: 0;
+				height: 0;
+				left: calc(50% - 10px);
+				top: 100%;
+				border-top: 20px solid $dark-teal;
+				border-left: 20px solid transparent;
+				border-right: 20px solid transparent;
+			}		
+		}
+	}
+
+	.tab .stat {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	.tab p {
+		margin-top: 0;
+	}
+
+	.indicator {
+		display: none;
+	}
+}
+
+.dashboard-container {
+	min-height: 300px;
+	position: relative;
+	padding-bottom: 50px;
+
+	h3 {
+		padding: 2rem 1rem 0 1rem;
+	}
+
+	h5 {
+		text-align: center;
+	}
+
+	.meta {
+		color: $medium-gray;
+		font-size: 12px;
+		position: absolute;
+		bottom: 0px;
+		left: 30px;
+	}
+
+	.dashboard-widget {
+		box-sizing: border-box;
+		padding: 1rem 2rem 2rem 2rem;
+		text-align: center;
+
+		h4 {
+			color: $pink;
+			text-transform: uppercase;
+			font-size: 1rem;
+			font-weight: 600;
+		}
+
+		table {
+			font-size: 15px;
+			margin: 2.5rem 0;
+		}
+	}
+
+	.big-stat {
+		color: $poc-blue;
+		font-size: 3rem;
+		padding-bottom: 4rem;
+		display: block;
+	}
+
+	.btn-row {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 40px;
+	}
+}
+
+/*********************************
+  
+  #DATA SOURCE
+
+*********************************/
+
+#data-source {
+	color: $white;
+	background: $poc-blue;
+	text-align: center;
+}
+
+#data-source .fa {
+	color: $light-blue;
+	font-size: 4rem;
+	padding: 1rem 0;
+}
+
+#data-source h4 {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 1rem;
+}
+
+#data-source p {
+	font-weight: 300;
+}
+
+/*********************************
+  
+  #Explore
+
+*********************************/

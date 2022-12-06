@@ -1,0 +1,57 @@
+/*
+ * Buttons
+ *
+ * Default POC button styles. Overrides Materialize.
+ *
+ * Author: 
+ * Contact:
+ * Date Created:
+*/
+
+.btn {
+	border-radius: 0;
+	background: $teal;
+	border-bottom: 3px solid $dark-teal;
+	color: $white;
+	box-shadow: none;
+	height: 45px;
+	line-height: 45px;
+
+	&:hover {
+		color: $white;
+		background: $dark-teal;
+		box-shadow: none;
+	}
+
+	a {
+		color: $white;
+
+		&:hover {
+			color: $white;
+			background: $dark-teal;
+		}
+	}
+}
+
+.btn.highlighted {
+	background-color: #2bbbad;
+}
+
+.btn-ghost {
+ 	background: transparent;
+	border: 2px solid $white;
+	border-radius: 3px;
+	height: 55px;
+	line-height: 53px;
+	color: $white;
+
+	&:hover {
+		background: $white;
+		color: $poc-blue;
+	}
+}
+
+.btn-row {
+	text-align: center;
+	padding: 2rem 0 1rem 0;
+}

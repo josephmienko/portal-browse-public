@@ -1,0 +1,32 @@
+/*
+ * Header
+ *
+ * Default styles for the header.
+ *
+ * Author: Erika Deal
+ * Contact: edeal@uw.edu
+ * Date Created: 8/4/2015
+*/
+
+a.logo {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+
+	img {
+		width: 70%;
+		padding-top: 15px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	a.logo {
+		max-width: 450px;
+		padding: .75rem 1rem;
+
+		img {
+			width: 100%;
+			padding-top: 0;
+		}
+	}
+}

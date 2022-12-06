@@ -1,0 +1,16 @@
+/**
+ * HELPERS
+ *
+ * Mixins and partials to help keep things DRY
+ *
+ * Author: Erika Deal
+ * Contact: edeal@uw.edu
+ */
+
+ @mixin card-icon() {
+	font-family: 'FontAwesome';
+	position: absolute;
+	top: -30px;
+	right: 0;
+	font-size: 10rem;
+ }

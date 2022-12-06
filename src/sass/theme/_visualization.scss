@@ -1,0 +1,143 @@
+/**
+ * VISUALIZATION
+ *
+ * Styles for the single visualization view
+ *
+ * Author: Erika Deal
+ * Contact: edeal@uw.edu
+ */
+
+ .visualization-title {
+ 	@extend .page-title;
+ 	color: $white;
+ 	background-image: linear-gradient($poc-blue, lighten($poc-blue, 5%));
+
+ 	&.map {
+		background: $poc-green;
+
+		.btn-ghost:hover {
+			background: $poc-green;
+		}
+	}
+ }
+
+.report-title {
+	@extend .page-title;
+	color: $white;
+	background-image: linear-gradient($dark-yellow, lighten($dark-yellow, 5%));
+}
+
+.visualization-content,
+.report-content {
+	@extend .page-content;
+	margin-top: 0;
+
+	.highlights-label h3 {
+		font-size: 18px;
+		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+		margin-bottom: 0;
+		padding: 0 0 .5rem 0;
+	}
+
+	.highlights-label {
+		margin-top: 2rem;
+	}
+
+	.unit {
+		display: block;
+		width: 100%;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.view-btn {
+		text-align: center;
+		margin-top: 3rem;
+	}
+
+	.stat {
+		text-align: center;
+
+		h4 {
+			color: $medium-gray;
+			font-size: 1rem;
+			margin: 0;
+		}	
+
+		p {
+			color: $pink;
+			font-size: 18px;
+			padding-top: 0;
+			margin-top: 10px;
+		}
+	}
+
+	.tags,
+	.browse-back {
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+
+	.tags {
+		color: $medium-gray;
+
+		.tag {
+			color: $medium-gray;
+			background: none;
+			font-size: 14px;
+			padding: 3px 0;
+		}
+	}
+}
+
+// Reports list
+#reports {
+	margin-left: 30px;
+
+	li {
+		list-style-type: disc;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.visualization-content {
+		max-width: 1080px;
+
+		.col > p,
+		.col > ul,
+		.col > ol {
+			max-width: 70%;
+		}
+
+		.view-btn {
+			width: 25%;
+			float: right;
+			clear: right;
+			margin-left: 50px;
+
+			a {
+				display: inline-block;
+			}
+		}
+
+		.stat,
+		.highlights-label {
+			width: 25%;
+			float: right;
+			clear: right;
+			margin-left: 100px;
+			background: $white;
+			padding: 1rem;
+		}
+
+		.stat {
+			padding-bottom: 0;
+		}
+
+		.stat h4 {
+			padding: 0;
+		}
+	}
+}
